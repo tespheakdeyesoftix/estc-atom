@@ -13,6 +13,7 @@ class arESTCPluginConfiguration extends sfPluginConfiguration
     // Here we are including the CSS stylesheet build in our pages.
     $context = $event->getSubject();
     $context->response->addStylesheet('/plugins/arESTCPlugin/css/min.css', 'last', array('media' => 'all'));
+    
   }
 
   public function initialize()
