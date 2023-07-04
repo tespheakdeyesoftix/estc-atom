@@ -3,7 +3,6 @@
 <?php slot('title'); ?>
   <h1><?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?></h1>
 <?php end_slot(); ?>
-
 <?php slot('sidebar'); ?>
 
   <?php echo get_component('menu', 'staticPagesMenu'); ?>
