@@ -1,5 +1,6 @@
 <h1>Hello word </h1>
 <h1>Welcome back to my channel </h1>
+<h1>I am edit this with seng eang and I change backgrunbd color to green </h1>
 <!-- <?php decorate_with('layout_2col'); ?>
 <h1>Hello word </h1>
 <?php slot('title'); ?>
