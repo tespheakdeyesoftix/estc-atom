@@ -1,17 +1,18 @@
-<h1>Hello word </h1>
-<h1>Welcome back to my channel </h1>
-<h1>I am edit this with seng eang and I change backgrunbd color to green </h1>
-<!-- <?php decorate_with('layout_2col'); ?>
-<h1>Hello word </h1>
+<div class="hello">
+  my content in div hello class
+</div>
+
+ <?php decorate_with('layout_2col'); ?>
+
 <?php slot('title'); ?>
   <h1><?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?></h1>
 <?php end_slot(); ?>
 
-<?php slot('sidebar'); ?>
 
-  <?php echo get_component('menu', 'staticPagesMenu'); ?>
 
-  <section>
+<div class="page">
+  <?php echo render_value_html($sf_data->getRaw('content')); ?>
+    <section>
     <h2><?php echo __('Browse by '); ?></h2>
     <ul>
       <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID); ?>
@@ -23,12 +24,14 @@
     </ul>
   </section>
 
+  <?php slot('sidebar'); ?>
+  <?php echo get_component('menu', 'staticPagesMenu'); ?>
+
+
+
   <?php echo get_component('default', 'popular', ['limit' => 10, 'sf_cache_key' => $sf_user->getCulture()]); ?>
 
 <?php end_slot(); ?>
-
-<div class="page">
-  <?php echo render_value_html($sf_data->getRaw('content')); ?>
 </div>
 
 <?php if (QubitAcl::check($resource, 'update')) { ?>
@@ -39,4 +42,4 @@
       </ul>
     </section>
   <?php end_slot(); ?>
-<?php } ?> -->
+<?php } ?> 
