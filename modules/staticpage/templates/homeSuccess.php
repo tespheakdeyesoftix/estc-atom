@@ -1,4 +1,5 @@
 <h1>Hello word </h1>
+<h1>Welcome back to my channel </h1>
 <!-- <?php decorate_with('layout_2col'); ?>
 <h1>Hello word </h1>
 <?php slot('title'); ?>
