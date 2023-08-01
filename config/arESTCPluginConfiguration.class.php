@@ -10,13 +10,20 @@ class arESTCPluginConfiguration extends sfPluginConfiguration
 
   public function contextLoadFactories(sfEvent $event)
   {
-    // Here we are including the CSS stylesheet build in our pages.
+  // Here we are including the CSS stylesheet build in our pages.
     $context = $event->getSubject();
     $context->response->addStylesheet('/plugins/arESTCPlugin/css/min.css', 'last', array('media' => 'all'));
+    $context->response->addStylesheet('/plugins/arESTCPlugin/css/style_min.css', 'last', array('media' => 'all'));
+    $context->response->addStylesheet('/plugins/arESTCPlugin/css/style_min2.css', 'last', array('media' => 'all'));
+    $context->response->addStylesheet('/plugins/arESTCPlugin/css/bootstrap@5.3.0bootstrap.min.css', 'last', array('media' => 'all'));
+    $context->response->addStylesheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css', 'last', array('media' => 'all'));
+    $context->response->addStylesheet('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css', 'last', array('media' => 'all'));
     
+    $context->response->addJavascript('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/fontawesome.min.js', 'last', array('media' => 'all'));
+    $context->response->addJavascript('/plugins/arESTCPlugin/js/Bootstrap_v5.3.0_min.js', 'last', array('media' => 'all'));
+    $context->response->addJavascript('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', 'last', array('media' => 'all'));
   }
-
-  public function initialize()
+   public function initialize()
   {
     // Run the class method contextLoadFactories defined above once Symfony
     // is done loading the internal framework factories.

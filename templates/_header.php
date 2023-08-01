@@ -1,5 +1,4 @@
-<h1 style="bacground:red;color:#fff">this top header</h1>
-<?php echo get_component('default', 'updateCheck'); ?>
+
 
 <?php echo get_component('default', 'privacyMessage'); ?>
 
@@ -9,47 +8,83 @@
   </div>
 <?php } ?>
 
-<header id="top-bar">
+<header id="top-bar" class="top_bar">
 
   <!-- <?php if (sfConfig::get('app_toggleLogo')) { ?>
     <?php echo link_to(image_tag('logo', ['alt' => 'AtoM']), '@homepage', ['id' => 'logo', 'rel' => 'home']); ?>
   <?php } ?> -->
-<!-- 
+  <!-- 
   <?php if (sfConfig::get('app_toggleTitle')) { ?>
     <h1 id="site-name">
       <?php echo link_to('<span>'.esc_specialchars(sfConfig::get('app_siteTitle')).'</span>', '@homepage', ['rel' => 'home', 'title' => __('Home')]); ?>
     </h1>
   <?php } ?> -->
-<!-- 
-  <nav>
 
+  <!-- <nav>
     <?php echo get_component('menu', 'userMenu'); ?>
 
     <?php echo get_component('menu', 'quickLinksMenu'); ?>
 
     <?php if (sfConfig::get('app_toggleLanguageMenu')) { ?>
       <?php echo get_component('menu', 'changeLanguageMenu'); ?>
-    <?php } ?>
-
-    <?php echo get_component('menu', 'clipboardMenu'); ?>
+    <?php } ?> 
 
     <?php echo get_component('menu', 'mainMenu', ['sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID()]); ?>
-
   </nav> -->
 
-  <div id="search-bar">
+  <div id="search-bar" class="search_bar p-0">
+    <div class="top_header me-0 me-md-2 me-lg-5">
+      <div class="menu_header"> 
+        <ul class="ul_menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">contact us</a></li>
+          <li>
+            <!-- <a href="#">english</a> -->
+              <a class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Language
+              </a>
+              <ul class="dropdown-menu style_dropdown">
+                <li><a class="dropdown-item" href="?sf_culture=en">English</a></li>
+                <li><a class="dropdown-item" href="?sf_culture=km">Khmer</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+          </li>
+          <!-- <li><a href="/user/login">Login</a></li> -->
+          
+        </ul>
+        <div class="blog_search">
+          <div class="research me-2">
+            <?php echo get_component('search', 'box'); ?>
+          </div>
+          <div class="li_search">
+            <?php echo get_component('menu', 'clipboardMenu'); ?>
+          </div>
+        </div>
+        <nav>
+          <div>
+            <?php echo get_component('menu', 'userMenu'); ?>
+          </div>
+          <!-- <?php echo get_component('menu', 'quickLinksMenu'); ?> -->
 
-    <?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID()]); ?>
+          <!-- <?php if (sfConfig::get('app_toggleLanguageMenu')) { ?>
+            <?php echo get_component('menu', 'changeLanguageMenu'); ?>
+          <?php } ?>  -->
 
-    <!-- <?php echo get_component('search', 'box'); ?> -->
-
+          <?php echo get_component('menu', 'mainMenu', ['sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID()]); ?>
+        </nav>
+      </div>
+    </div>
   </div>
-
+  
+  <!-- <div class="btn_click">
+    <?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID()]); ?>
+  </div> -->
   <?php echo get_component_slot('header'); ?>
-
 </header>
 
-<?php if (sfConfig::get('app_toggleDescription')) { ?>
+
+
+<!-- <?php if (sfConfig::get('app_toggleDescription')) { ?>
   <div id="site-slogan">
     <div class="container">
       <div class="row">
@@ -59,4 +94,4 @@
       </div>
     </div>
   </div>
-<?php } ?>
+<?php } ?> -->

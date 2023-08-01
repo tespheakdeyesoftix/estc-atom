@@ -1,14 +1,11 @@
-<?php decorate_with('layout_2col'); ?>
-
+<?php decorate_with('layout_home'); ?>
 <?php slot('title'); ?>
   <h1><?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?></h1>
 <?php end_slot(); ?>
 <?php slot('sidebar'); ?>
-
   <?php echo get_component('menu', 'staticPagesMenu'); ?>
-
   <section>
-    <h2><?php echo __('Browse by'); ?></h2>
+    <h2 style="text-decoration: underline orange;"><?php echo __('browse by'); ?></h2>
     <ul>
       <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID); ?>
       <?php if ($browseMenu->hasChildren()) { ?>
@@ -17,16 +14,12 @@
         <?php } ?>
       <?php } ?>
     </ul>
-  </section>
-
+  </section> 
   <?php echo get_component('default', 'popular', ['limit' => 10, 'sf_cache_key' => $sf_user->getCulture()]); ?>
-
-<?php end_slot(); ?>
-
+<?php end_slot();?>
 <div class="page">
   <?php echo render_value_html($sf_data->getRaw('content')); ?>
 </div>
-
 <?php if (QubitAcl::check($resource, 'update')) { ?>
   <?php slot('after-content'); ?>
     <section class="actions">
@@ -35,4 +28,4 @@
       </ul>
     </section>
   <?php end_slot(); ?>
-<?php } ?>
+<?php }?>
