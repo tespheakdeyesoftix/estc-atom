@@ -45,7 +45,7 @@
         <div class="browse_by">
           <div class="brand_name">
             <a href="/">
-              <img src="/plugins/arESTCPlugin/images/Angkor_Archives_6.jpg"  alt="brand">
+              <img src="/plugins/arESTCPlugin/images/logomg.jpg"  alt="brand">
             </a>
           </div>
           <div class="cover_browse">
