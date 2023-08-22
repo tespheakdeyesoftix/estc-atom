@@ -62,7 +62,7 @@
         </div>
         
         <div class="wrap-intor-on-slide text-center intro title">
-          <h1>EFEO Archives</h1>
+          <h1>Angkor Archives</h1>
           <p>
             Inventories | Finding aids 
           </p>

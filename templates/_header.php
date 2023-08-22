@@ -33,6 +33,7 @@
   </nav> -->
 
   <div id="search-bar" class="search_bar p-0">
+    <div class="bg_gradient"></div>
     <div class="top_header me-0 me-md-2 me-lg-5">
       <div class="menu_header"> 
         <ul class="ul_menu">
