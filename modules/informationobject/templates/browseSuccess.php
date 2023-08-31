@@ -3,7 +3,6 @@
 <?php } else { ?>
   <?php decorate_with('layout_1col'); ?>
 <?php } ?>
-
 <?php use_helper('Date'); ?>
 
 <?php slot('title'); ?>
