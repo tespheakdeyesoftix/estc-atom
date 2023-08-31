@@ -1,4 +1,3 @@
-
 <?php if (isset($pager) && $pager->getNbResults() || sfConfig::get('app_enable_institutional_scoping')) { ?>
   <?php decorate_with('layout_2col'); ?>
 <?php } else { ?>
@@ -22,8 +21,6 @@
     <span class="sub" id="results-label"><?php echo sfConfig::get('app_ui_label_informationobject'); ?></span>
   </div>
 <?php end_slot(); ?>
-
- 
 
 <?php if (isset($pager) && $pager->getNbResults() || sfConfig::get('app_enable_institutional_scoping')) { ?>
 
@@ -135,7 +132,7 @@
         <?php echo __('Only top-level descriptions'); ?>
         <?php $params = $sf_data->getRaw('sf_request')->getGetParameters(); ?>
         <?php $params['topLod'] = 0; ?>
-        <a href="<?php echo url_for(['module' => 'informationobject', 'action' => 'browse'] + $params); ?>" class="remove-filter"><i class="fa fa-times"></i></a>
+        <a href="<?php echo url_for(['module' => 'informationobject', 'action' => 'browse'] + $params); ?>" class="remove-filter" aria-label="<?php echo __('Remove filter'); ?>"><i aria-hidden="true" class="fa fa-times"></i></a>
       </span>
     <?php } ?>
 
@@ -147,14 +144,17 @@
 
 <?php slot('content'); ?>
 
-  <?php echo get_partial('search/advancedSearch', [
-      'criteria' => $search->criteria,
-      'template' => $template,
-      'form' => $form,
-      'show' => $showAdvanced,
-      'topLod' => $topLod,
-      'rangeType' => $rangeType,
-      'hiddenFields' => $hiddenFields, ]); ?>
+  <?php echo get_component(
+    'informationobject',
+    'advancedSearch',
+    [
+        'criteria' => $search->criteria,
+        'template' => $template,
+        'form' => $form,
+        'topLod' => $topLod,
+        'hiddenFields' => $hiddenFields,
+    ]
+  ); ?>
 
   <?php if (isset($pager) && $pager->getNbResults()) { ?>
 
