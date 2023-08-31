@@ -5,7 +5,6 @@
 <?php } ?>
 
 <?php use_helper('Date'); ?>
-
 <?php slot('title'); ?>
   <?php echo get_partial('default/printPreviewBar'); ?>
 
