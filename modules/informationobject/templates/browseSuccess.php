@@ -1,3 +1,4 @@
+
 <?php if (isset($pager) && $pager->getNbResults() || sfConfig::get('app_enable_institutional_scoping')) { ?>
   <?php decorate_with('layout_2col'); ?>
 <?php } else { ?>
@@ -144,6 +145,7 @@
 
 <?php slot('content'); ?>
 
+<h1>Hello world</h1>
   <?php echo get_partial('search/advancedSearch', [
       'criteria' => $search->criteria,
       'template' => $template,
