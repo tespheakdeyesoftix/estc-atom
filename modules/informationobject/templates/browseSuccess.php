@@ -1,4 +1,3 @@
-
 <?php if (isset($pager) && $pager->getNbResults() || sfConfig::get('app_enable_institutional_scoping')) { ?>
   <?php decorate_with('layout_2col'); ?>
 <?php } else { ?>
@@ -22,8 +21,6 @@
     <span class="sub" id="results-label"><?php echo sfConfig::get('app_ui_label_informationobject'); ?></span>
   </div>
 <?php end_slot(); ?>
-
- 
 
 <?php if (isset($pager) && $pager->getNbResults() || sfConfig::get('app_enable_institutional_scoping')) { ?>
 
@@ -192,7 +189,6 @@
                 'endDate' => __('End date'), ], ]); ?>
       </div>
     </section>
-
     <div id="content" class="browse-content">
       <?php if (!isset($sf_request->onlyMedia) && isset($aggs['digitalobjects']) && 0 < $aggs['digitalobjects']['doc_count']) { ?>
         <div class="search-result media-summary">
