@@ -26,9 +26,7 @@
     <div id="wrapper" class="container" role="main">
 
       <?php echo get_partial('alerts'); ?>
-<h1>Hello world</h1>
-<h1>Hello world</h1>
-<h1>Hello world</h1>
+
       <div class="row">
 
         <div class="col-3">
