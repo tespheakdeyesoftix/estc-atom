@@ -143,7 +143,6 @@
 <?php end_slot(); ?>
 
 <?php slot('content'); ?>
-<h1>Hello world</h1>
   <?php echo get_component(
     'informationobject',
     'advancedSearch',
