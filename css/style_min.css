@@ -388,6 +388,10 @@ a, #browse-menu button, #search-form-wrapper button:before, #top-bar nav button,
 a, #browse-menu button, #search-form-wrapper button:before, #top-bar nav button, #top-bar nav button:before, .form-item label{
     color: black;
 }
+#top-bar nav button{
+    color: rgb(255, 255, 255);
+}
+
 .c-btn:hover{
     background-color: #f6ac00;
 }
@@ -416,4 +420,28 @@ a{
     position: absolute !important;
     background: rgb(0,212,255);
     background: linear-gradient(90deg, rgba(0,212,255,0) 0%, rgb(219 7 42) 100%);
+}
+
+.btn.fa.fa-list , .btn.fa.fa-th-large{
+    
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 0px 5px;
+    border-radius: 0px;
+}
+.fa-list:before{
+    content: none !important;
+}
+.btn.fa.fa-list{
+    background-image: url(./icon/col.png);
+}
+.btn.fa.fa-th-large{
+    background-image: url(./icon/table.png);
+}
+.fa-th-large:before{
+    content: none !important;
+}
+a.btn.fa.fa-list.active , a.btn.fa.fa-th-large.active{
+    color: #f6ac00;
 }
