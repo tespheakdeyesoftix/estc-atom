@@ -15,7 +15,9 @@
     <?php } ?>
   <?php include_javascripts(); ?> 
   </head>
+  <link media="all" href="/plugins/arESTCPlugin/css/bootstrap@5.3.0bootstraps.min.css" rel="stylesheet" type="text/css" />
 <stlye>
+
 </stlye>
   <body class="yui-skin-sam p-0 m-0 <?php echo $sf_context->getModuleName(); ?> <?php echo $sf_context->getActionName(); ?>">
     <?php echo get_component('default', 'tagManager', ['code' => 'noscript']); ?>

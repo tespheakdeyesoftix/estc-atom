@@ -32,21 +32,21 @@
     <?php echo get_component('menu', 'mainMenu', ['sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID()]); ?>
   </nav> -->
 
-  <div id="search-bar" class="search_bar p-0">
+  <div id="search-bar" class="search_bar">
     <div class="bg_gradient"></div>
-    <div class="top_header me-0 me-md-2 me-lg-5">
+    <div class="top_header pr-2">
       <div class="menu_header"> 
         <ul class="ul_menu">
           <li><a href="/">Home</a></li>
           <li><a href="#">contact us</a></li>
-          <li>
+          <li class="languages_sub">
             <!-- <a href="#">english</a> -->
-              <a class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Language
+              <a>
+              Languages
               </a>
-              <ul class="dropdown-menu style_dropdown">
-                <li><a class="dropdown-item" href="?sf_culture=en">English</a></li>
-                <li><a class="dropdown-item" href="?sf_culture=km">Khmer</a></li>
+              <ul class="style_dropdown">
+                <li><a href="?sf_culture=en">English</a></li>
+                <li><a href="?sf_culture=km">Khmer</a></li>
                 <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
               </ul>
           </li>

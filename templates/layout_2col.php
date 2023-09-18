@@ -29,7 +29,7 @@
 
       <div class="row">
 
-        <div class="col-3">
+        <div class="span3">
 
           <div id="sidebar">
 
@@ -39,7 +39,7 @@
 
         </div>
 
-        <div class="col-9">
+        <div class="span9 hide_row">
 
           <div id="main-column">
 
@@ -62,7 +62,7 @@
       </div>
 
     </div>
-
+    
     <?php include_slot('post'); ?>
 
     <?php echo get_partial('footer'); ?>
