@@ -63,12 +63,12 @@
           </div>
         </div>
         
-        <div class="wrap-intor-on-slide text-center intro title">
+        <!-- <div class="wrap-intor-on-slide text-center intro title">
           <h1>Angkor Archives</h1>
           <p>
             Inventories | Finding aids 
           </p>
-        </div>
+        </div> -->
          
       </div>                      
     </section> 

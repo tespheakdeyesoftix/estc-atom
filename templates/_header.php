@@ -38,7 +38,7 @@
       <div class="menu_header"> 
         <ul class="ul_menu">
           <li><a href="/">Home</a></li>
-          <li><a href="#">contact us</a></li>
+          <li><a href="contact">contact us</a></li>
           <li class="languages_sub">
             <!-- <a href="#">english</a> -->
               <a>
