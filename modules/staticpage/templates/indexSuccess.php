@@ -48,7 +48,7 @@
         // ==========================================
         $url = 'https://www.google.com/recaptcha/api/siteverify';
         $data = array(
-            'secret' => '6LcppzgoAAAAAMCl6PLJ-Ao__CR-rXgajutHJvLz',
+            'secret' => '6LdAjzwoAAAAAP4jPL0xcBfWdOkqk9IcSZx79TNf',
             'response' => $_POST["g-recaptcha-response"]
         );
         $query = http_build_query($data);
