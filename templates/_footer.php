@@ -12,7 +12,7 @@
       <div class="col-12">
         <!-- <img src="/plugins/arESTCPlugin/images/Angkor_Archives_5.jpg" alt="logo"> -->
         <div class="ft_text text-center">
-          <p>©Copyright 2023, All reserved by APSARA Nacional Authority</p>
+          <p>©Copyright 2023, All reserved by APSARA Nationality Authority</p>
           <!-- <p>Te: 012 357 724, 012 333 008</p> -->
           <p>Email: info@angkorarchive.info</p>
           <p>Supported by FIDA-ICA (Fund for the International of archives-International council on archives)</p>

@@ -22,6 +22,7 @@ class arESTCPluginConfiguration extends sfPluginConfiguration
     $context->response->addJavascript('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/fontawesome.min.js', 'last', array('media' => 'all'));
     $context->response->addJavascript('/plugins/arESTCPlugin/js/Bootstrap_v5.3.0_min.js', 'last', array('media' => 'all'));
     $context->response->addJavascript('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', 'last', array('media' => 'all'));
+    $context->response->addJavascript('https://www.google.com/recaptcha/api.js', 'last', array('media' => 'all'));
   }
    public function initialize()
   {
