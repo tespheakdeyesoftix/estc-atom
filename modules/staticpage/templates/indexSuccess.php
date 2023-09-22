@@ -91,7 +91,7 @@
                     </thead>
                     <tbody style='vertical-align: text-top; line-height: 18px;'>
 
-                    <!--    Field Data Mailler     -->
+                    <!--    Field Data Maillers     -->
 
                     <tr>
                     <td style='padding: 10px 20px;' width='150px'>Last Name</td>
