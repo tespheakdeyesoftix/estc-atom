@@ -48,7 +48,7 @@
         // ==========================================
         $url = 'https://www.google.com/recaptcha/api/siteverify';
         $data = array(
-            'secret' => '6LdAjzwoAAAAAP4jPL0xcBfWdOkqk9IcSZx79TNf',
+            'secret' => '6LcppzgoAAAAAMCl6PLJ-Ao__CR-rXgajutHJvLz',
             'response' => $_POST["g-recaptcha-response"]
         );
         $query = http_build_query($data);
@@ -84,7 +84,7 @@
                         <tr>
                             <td style='text-align: center;' colspan='2'>
                                 <a href='$root_url' target='_blank'>
-                                    <h1>$sitename</h1>
+                                    <h1 style='color: #fff;'>$sitename</h1>
                                 </a>
                             </td>
                         </tr>
@@ -154,7 +154,7 @@
                             <tr>
                                 <td style='text-align: center;' colspan='2'>
                                     <a href='$root_url' target='_blank'>
-                                        <h1>$sitename</h1>
+                                        <h1 style='color: #fff;'>$sitename</h1>
                                     </a>
                                 </td>
                             </tr>

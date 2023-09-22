@@ -104,7 +104,7 @@
         $('.autoplay').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         arrows: true,
         prevArrow: '<div class="slick-prev"><i class="fa fa-angle-double-left"></i></div>',
         nextArrow: '<div class="slick-next"><i class="fa fa-angle-double-right"></i></div>',
